@@ -12,9 +12,9 @@ id_pattern = re.compile(r'^.\d+$')
 # 🔹 BOT INFORMATION
 # ============================================================
 SESSION = environ.get('SESSION', 'MyselfNeon')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '21383441'))
+API_HASH = environ.get('API_HASH', '62141d4cefa2756e4059cbdeac6ab46b')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7404094434:AAHE8rkkxAerJN2mEja5RvH19h6MGkUA7rY")
 
 # Keep-Alive URL
 KEEP_ALIVE_URL = environ.get("KEEP_ALIVE_URL", "")  # <-- Add this line
@@ -86,7 +86,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch
 # ============================================================
 # 🔹 DATABASE
 # ============================================================
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ASMOVIE_DD:ASMOVIE_DDD@cluster0.1riyjj1.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "NeonFilter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'neoncollection')
 
@@ -134,8 +134,8 @@ PAYMENT_TEXT = environ.get(
 # 🔹 CLONE SETTINGS
 # ============================================================
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
-CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
-CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone mode is true
+CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
+CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://KING_OF:KOTHA@cluster0.i2t5qiv.mongodb.net/?appName=Cluster0") # Necessary If clone mode is true
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'AnimeZerox') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 
@@ -262,4 +262,5 @@ REACTIONS = [
 # Dont remove Credits
 # Developer Telegram @MyselfNeon
 # Update channel - @NeonFiles
+
 
