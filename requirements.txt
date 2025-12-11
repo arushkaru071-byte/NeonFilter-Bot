@@ -20,6 +20,7 @@ pytz
 ujson
 wget
 dnspython
+edge_tta
 
 # --- Media & File Handling ---
 Pillow==9.4.0
@@ -53,7 +54,6 @@ wheel
 humanize
 psutil
 openai
-edge_tta
 # --- Pyrogram Mods / Plugins ---
 pyromod
 git+https://github.com/Joelkb/cinemagoer
@@ -61,5 +61,6 @@ git+https://github.com/Joelkb/cinemagoer
 # --- NEW (added for your improved plugin) ---
 # These ensure SSL retry logic & async downloads work perfectly
 async-timeout==4.0.3
+
 
 
