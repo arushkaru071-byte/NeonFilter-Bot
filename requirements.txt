@@ -1,6 +1,7 @@
 # --- Core Bot Framework ---
 pyrofork==2.3.45
 tgcrypto
+
 # --- Database & ORM ---
 pymongo[srv]==3.12.3
 motor==2.5.1
@@ -12,7 +13,6 @@ python-dotenv
 # --- Networking & Requests ---
 aiohttp==3.9.5
 aiofiles==24.1.0
-async-timeout==4.0.3
 requests
 bs4
 shortzy
@@ -20,7 +20,7 @@ pytz
 ujson
 wget
 dnspython
-
+async-timeout==4.0.3
 
 # --- Media & File Handling ---
 Pillow==9.4.0
@@ -31,18 +31,21 @@ pikepdf
 rarfile
 pyzipper
 opencv-python-headless
+filetype
+
+# --- Installs FFmpeg/FFprobe ---
+static-ffmpeg
 
 # --- YouTube / Downloader Tools ---
 yt-dlp
-youtube-dl
 youtube-search-python
 youtube_search
 ytthumb
 PyLeaves
 
 # --- Audio / Speech ---
-gTTS
-speedtest
+edge-tts
+speedtest-cli
 
 # --- Utilities / Extras ---
 jinja2
@@ -53,14 +56,13 @@ NumPy
 wheel
 humanize
 psutil
-openai
+google-generativeai>=0.8.3
+
 # --- Pyrogram Mods / Plugins ---
 pyromod
 git+https://github.com/Joelkb/cinemagoer
 
-# --- NEW (added for your improved plugin) ---
-# These ensure SSL retry logic & async downloads work perfectly
-async-timeout==4.0.3
+
 
 
 
