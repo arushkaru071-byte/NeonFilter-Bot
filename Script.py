@@ -1,12 +1,12 @@
 class script(object):
     START_TXT = """<b><blockquote><i>‣ Hᴇʟʟᴏ {}</i></blockquote>
 <i><blockquote>I ᴀᴍ Lᴀᴛᴇsᴛ Aᴅᴠᴀɴᴄᴇᴅ Fɪʟᴛᴇʀ Bᴏᴛ.
-Cᴏᴅᴇᴅ & Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href='https://t.me/MyselfNeon'>NᴇᴏɴAɴᴜʀᴀɢ</a>.
+Cᴏᴅᴇᴅ & Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href='https://t.me/laser_of_telegram'>FAX</a>.
 I ᴄᴀɴ Fɪʟᴛᴇʀ & Sᴇɴᴅ Mᴏᴠɪᴇs / Aɴɪᴍᴇs Fɪʟᴇs Aᴅᴅᴇᴅ ᴛᴏ ᴍʏ Dᴀᴛᴀʙᴀsᴇ !!</blockquote></i></b>"""
 
     CLONE_START_TXT = """<b><blockquote><i>‣ Hᴇʟʟᴏ {}</i></blockquote>
 <i><blockquote>I am Latest Advanced Filter Bot.
-Coded & Developed by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.
+Coded & Developed by <a href='https://t.me/laser_of_telegram'>FaX</a>.
 You can create you own Clone Bot and use it in your own channel. It will Filter and Send Movies/Animes files added to its Database !!</blockquote></i></b>"""
     
     HELP_TXT = """<blockquote><b>😎 <i>Hᴇʟʟᴏ {} 
@@ -15,7 +15,7 @@ Hᴇʀᴇ Aʀᴇ Mʏ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs</i> 🤗</b></blockquote>"
     ABOUT_TXT = """<b><blockquote>‣ 📝 𝐌𝐘 𝐃𝐄𝐓𝐀𝐈𝐋𝐒</blockquote>    
 <i>• Mʏ Nᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
 • Mʏ Bᴇsᴛ Fʀɪᴇɴᴅ : <a href='tg://settings'>Tʜɪs Sᴡᴇᴇᴛɪᴇ ❤️</a> 
-• Dᴇᴠᴇʟᴏᴘᴇʀ : <a href={}>@MʏsᴇʟғNᴇᴏɴ</a> 
+• Dᴇᴠᴇʟᴏᴘᴇʀ : <a href={}>@MʏFAX</a> 
 • Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a> 
 • Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 𝟹</a> 
 • DᴀᴛᴀBᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ DB</a> 
@@ -100,8 +100,8 @@ Buy paid plan by - /plan
 • /connections - List of all connections</i></b>"""
 
     EXTRAMOD_TXT = """<blockquote><i><b>‣ Extra Modules</b></i></blockquote>
-<blockquote><b><i>Maintained by <a href={}>NeonAnurag 💖</a></i></b> 
-<b><i>Powered By @NeonFiles</i> 🔥</b></blockquote>
+<blockquote><b><i>Maintained by <a href={}>Fax 💖</a></i></b> 
+<b><i>Powered By @faxFiles</i> 🔥</b></blockquote>
   
 <i>/id - <b>Get ID of specified User</b> 
 /info  - <b>Get information about a user</b>
