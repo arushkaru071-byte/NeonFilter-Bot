@@ -14,7 +14,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'MyselfNeon')
 API_ID = int(environ.get('API_ID', '21383441'))
 API_HASH = environ.get('API_HASH', '62141d4cefa2756e4059cbdeac6ab46b')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7404094434:AAHE8rkkxAerJN2mEja5RvH19h6MGkUA7rY")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8559533818:AAG-DDTxNzdtMmmoA2E-u5_El67N2LeiO6Y")
 
 # Keep-Alive URL
 KEEP_ALIVE_URL = environ.get("KEEP_ALIVE_URL", "")  # <-- Add this line
@@ -39,7 +39,7 @@ PICS = (
 # 🔹 ADMINS & USERS
 # ============================================================
 ADMINS = [int(admin) if id_pattern.search(admin) else admin
-          for admin in environ.get('ADMINS', '841851780').split()]  # Multiple IDs separated by space
+          for admin in environ.get('ADMINS', '6970728256').split()]  # Multiple IDs separated by space
 
 auth_users = [int(user) if id_pattern.search(user) else user
               for user in environ.get('AUTH_USERS', '').split()]  # Multiple IDs separated by space
@@ -50,22 +50,22 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # ============================================================
 # 🔹 CHANNELS AND GROUPS
 # ============================================================
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001889915480'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003082828281'))
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch
-            for ch in environ.get('CHANNELS', '-1002627138181 -1002487845241').split()]
+            for ch in environ.get('CHANNELS', '-1002658908912').split()]
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database
 
-REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False))  # True → request to join FSUB
-TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False))                # Retry button for FSUB
+REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True))  # True → request to join FSUB
+TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True))                # Retry button for FSUB
 
 # Force Subscribe Channel
-auth_channel = environ.get('AUTH_CHANNEL', '-1002384933640')
+auth_channel = environ.get('AUTH_CHANNEL', '@faxfiles')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # File request channel
-reqst_channel = environ.get('REQST_CHANNEL', '-1002158258466')
+reqst_channel = environ.get('REQST_CHANNEL', '-1002658908912')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # Index request channel
@@ -76,26 +76,26 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # File store channel (/batch command)
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002487845241')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002658908912')).split()]
 
 # Delete channel(s)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch
-                   for dch in environ.get('DELETE_CHANNELS', '-1002231967338').split()]
+                   for dch in environ.get('DELETE_CHANNELS', '-1002658908912').split()]
 
 
 # ============================================================
 # 🔹 DATABASE
 # ============================================================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ASMOVIE_DD:ASMOVIE_DDD@cluster0.1riyjj1.mongodb.net/?appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://KING:KOTHA@cluster0.glyr2hm.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "NeonFilter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'neoncollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False))
 
 # Separate DBs if MULTIPLE_DATABASE = True
-O_DB_URI = environ.get('O_DB_URI', "")  # This Db Is For Other Data Store
-F_DB_URI = environ.get('F_DB_URI', "")  # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "")  # This Db is for File Data Store When First Db Is Going To Be Full
+O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://KING:KOTHA@cluster0.glyr2hm.mongodb.net/?appName=Cluster0")  # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://KING:KOTHA@cluster0.glyr2hm.mongodb.net/?appName=Cluster0")  # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://KING:KOTHA@cluster0.glyr2hm.mongodb.net/?appName=Cluster0")  # This Db is for File Data Store When First Db Is Going To Be Full
 
 if not MULTIPLE_DATABASE:
     USER_DB_URI = OTHER_DB_URI = FILE_DB_URI = SEC_FILE_DB_URI = DATABASE_URI
@@ -109,14 +109,14 @@ else:
 # ============================================================
 # 🔹 PREMIUM AND REFERAL 
 # ============================================================
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If False Then No Need To Fill.
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True))
 
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '5'))
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://files.catbox.moe/tc8drk.jpg')
+PAYMENT_QR = environ.get('PAYMENT_QR', '')
 PAYMENT_TEXT = environ.get(
     'PAYMENT_TEXT',
     '<b><blockquote>‣ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐏𝐋𝐀𝐍𝐒 📝</blockquote>\n'
@@ -142,10 +142,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'AnimeZerox') # Public 
 # ============================================================
 # 🔹 LINKS
 # ============================================================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+o1s-8MppL2syYTI9')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/neonfiles')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Talk2neonBot') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/MyselfNeon')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cinemacompanu')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/faxfiles')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Faxfiles') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/laser_of_telegram')
 
 
 # ============================================================
@@ -198,7 +198,7 @@ TUTORIAL = environ.get('TUTORIAL', '')
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Powered by @NeonFiles ❤️✨')
+MSG_ALRT = environ.get('MSG_ALRT', 'Powered by @faxFiles ❤️✨')
 
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
@@ -245,7 +245,7 @@ RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 # ============================================================
 # 🔹 AUTO APPROVE
 # ============================================================
-AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', False))  # Set True or False
+AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', True))  # Set True or False
 # Auto Approve Info : If True Then Bot Approve New Upcoming Join Request Else Not
 
 
@@ -262,5 +262,6 @@ REACTIONS = [
 # Dont remove Credits
 # Developer Telegram @MyselfNeon
 # Update channel - @NeonFiles
+
 
 
